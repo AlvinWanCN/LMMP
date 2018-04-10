@@ -23,4 +23,6 @@ urlpatterns = [
     url(r'^new_list/$',new_list),
     url(r'^content/$', content),
     url(r'^new_list/(\w+)', content),
+    url(r'^reqTest',reqTest),
+    url(r'^forms',forms),
 ]
