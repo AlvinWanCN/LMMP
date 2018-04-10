@@ -2,7 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>
+  {% block title %}
+    林木苗圃
+  {% endblock %}
+</title>
 <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +29,7 @@
     </ul>
   </div>
 </div>
-<div class="banner"><img src="../static/images//banner.jpg" /></div>
+<div class="banner"><img src="../static/images/banner.jpg" /></div>
 <div class="content">
   <div class="left">
     <div class="left1"> <img src="../static/images//left-1-bg1.jpg" />
@@ -50,39 +54,8 @@
       </div>
       <img src="../static/images//left-1-bg2.jpg" /> </div>
   </div>
-  <div class="weizhi-right">
-    <div class="weizhi-right1"> <img src="../static/images//right-1-1.jpg" />
-      <div class="weizhi-right1-1">
-      <div class="now">您现在的位置：林木苗圃>新闻动态</div>
-      <div class="clear"></div>
-     <div class="new-right">
-     <ol>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-     <li><a href="#">本季树可免冬季穿衣多栽本地数可免冬季数穿衣</a><span>2010-03-24</span></li>
-
-     </ol>
-     <div class="clear"></div>
-     </div>
-       <form class="form1">
-       <p class="p3">共5条&nbsp;每页10条&nbsp;页次：1/1</p>
-       <p class="p4"><a href="">首页</a><a href="">上一页</a><a class="a1" href="">1</a><a href="">下一页</a>
-       <select>
-       <option>第1页</option>
-       <option>第2页</option>
-       </select>
-       <a href="">尾页</a></p>
-       </form>
-      </div>
-      <img src="../static/images//right-1-2.gif" /> </div>
-  </div>
+    {% block content %}
+    {% endblock %}
   <div class="clear"></div>
 </div>
 <div class="xian"></div>

@@ -19,5 +19,8 @@ from News.views import *
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^base',base)
+    url(r'^base',base),
+    url(r'^new_list/$',new_list),
+    url(r'^content/$', content),
+    url(r'^new_list/(\w+)', content),
 ]

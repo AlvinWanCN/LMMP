@@ -108,8 +108,8 @@ img{ border:none;}
 .ip1{ width:160px; height:18px;border: 1px #DBDFE6 solid; margin-top:2px;}
 .ip2{ background:url(images/search-bt.jpg); width:53px; height:20px; border:none; margin-top:2px; padding-left:18px;}
 .new-right ol{ margin-left:42px; width:656px; float:left; display:inline; }
-.new-right ol li{ line-height:32px; height:32px;  background:url(images/li-dian.jpg) repeat-x left bottom; }
-.new-right ol li a{ float:left; color:#333333; background:url(images/new-li.jpg) no-repeat 1px center; padding-left:26px; }
+.new-right ol li{ line-height:32px; height:32px;  background:url(../images/li-dian.jpg) repeat-x left bottom; }
+.new-right ol li a{ float:left; color:#333333; background:url(../images/new-li.jpg) no-repeat 1px center; padding-left:26px; }
 .new-right ol li span{color:#9999B0; float:right; float:right; }
 
 					/*order页面*/
