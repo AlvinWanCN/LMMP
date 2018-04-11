@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('date', models.DateField()),
                 ('content', models.TextField()),
                 ('src', models.CharField(max_length=64)),
-                ('dalete_flag', models.CharField(max_length=4)),
+                ('delete_flag', models.CharField(max_length=4)),
             ],
         ),
     ]

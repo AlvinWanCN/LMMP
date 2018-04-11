@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django ajax</title>
+    <script src="/static/jq/jquery.js"></script>
+    <script src="/static/jq/jquery.min.js"></script>
+</head>
+<body>
+<div id="data"></div>
+<button id="button" onclick="jqAjax()">click</button>
+
+<script>
+{#    $(#}
+{#        function () {#}
+{#            $("#button").click(#}
+{#              function () {#}
+{#                  $("#data").text("while是个戳胖子")#}
+{#              }#}
+{#            )#}
+{#        }#}
+{#       // #("#button") //可以代表document.getElementById#}
+{#         //   $(".button") //可以代表document.getElimentByClass#}
+{#    )#}
+    function jqAjax() {
+        var json_data = JSON.toString({'for':'hello'})
+        $.ajax(
+            {
+                url:'http://127.0.0.1/postData', //请求的地址
+                type:"post",//我们提交的方式
+                data:"json_data", //请求的内容
+                beforeSend:function () {},
+                async:true,//判断是否异步
+                success:function (Data) {
+                    console.log(Data);
+                    $("#data").text(Data['state'])
+                },
+                error:function (err) {
+                    alert(err)
+                },
+            }
+        )
+
+    }
+</script>
+
+</body>
+</html>

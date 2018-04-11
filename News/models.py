@@ -10,4 +10,8 @@ class News(models.Model):
     date = models.DateField()
     content = models.TextField()
     src = models.CharField(max_length=64)
-    dalete_flag = models.CharField(max_length=4)
+    delete_flag = models.CharField(max_length=4)
+
+class User(models.Model ):
+    user = models.CharField(max_length=32)
+    password = models.CharField( max_length=32)

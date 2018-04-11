@@ -25,4 +25,7 @@ urlpatterns = [
     url(r'^new_list/(\w+)', content),
     url(r'^reqTest',reqTest),
     url(r'^forms',forms),
+    url(r'^djforms',djangoForms),
+    url(r'^djAjax', djAlax),
+    url(r'^postData', postData),
 ]

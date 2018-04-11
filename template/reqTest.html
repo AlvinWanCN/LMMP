@@ -5,24 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-{#    {{ request }} </br>#}
-{#    {{ req_list }} </br>#}
-{#    <ul>#}
-{#        <li>{{ request.path }} <span>返回除了域名以外的请求路径，以正斜杠开头。</span></li>#}
-{#        <li>{{ request.get_host}} <span>获取主机名称</span></li>#}
-{#        <li>{{ request.get_full_path}}<span>它也是获取请求的路径，但是包含查询字符串</span></li>#}
-{#        <li>{{ request.is_secure}}<span>判断是否是https协议。</span></li>#}
-{#        <li>{{ request.is_ajax}}<span>判断是否是ajax。</span></li>#}
-{#        <li>{{ request.META}}<span>打印request.META</span></li>#}
-{#        <li>{{ request.META.HTTP_USER_AGENT }}<span>打印request.META</span></li>#}
-{#    </ul>#}
-{#    <p>#}
-{#        welcome to /reqtest#}
-{#    </p>#}
-{#    <p>#}
-{#        welcome to {{ request.path }}#}
-{#    </p>#}
+    {{ request }} </br>
+    {{ req_list }} </br>
+    <ul>
+        <li>{{ request.path }} <span>返回除了域名以外的请求路径，以正斜杠开头。</span></li>
+        <li>{{ request.get_host}} <span>获取主机名称</span></li>
+        <li>{{ request.get_full_path}}<span>它也是获取请求的路径，但是包含查询字符串</span></li>
+        <li>{{ request.is_secure}}<span>判断是否是https协议。</span></li>
+        <li>{{ request.is_ajax}}<span>判断是否是ajax。</span></li>
+        <li>{{ request.META}}<span>打印request.META</span></li>
+        <li>{{ request.META.HTTP_USER_AGENT }}<span>打印request.META</span></li>
+    </ul>
+    <p>
+        welcome to /reqtest
+    </p>
+    <p>
+        welcome to {{ request.path }}
+    </p>
 
- {{ getData }}
+ #{{ getData }}
+{{ request.POST }}
 </body>
 </html>
